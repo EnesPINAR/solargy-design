@@ -1,0 +1,27 @@
+.banner {
+    background-image: url('../img/Banner.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center center;
+}
+
+.lowTracking {
+    animation-name: low-tracking;
+    animation-duration: 2s;
+}
+
+.highTracking {
+    animation-name: high-tracking;
+    animation-duration: 2s;
+}
+
+@keyframes low-tracking {
+    0% {letter-spacing: 0px;}
+    100% {letter-spacing: 4px;}
+}
+
+@keyframes high-tracking {
+    0% {letter-spacing: 1px;}
+    100% {letter-spacing: 14px;}
+}
+
+.waved {
+    background-image: url("../img/Vector.svg"); background-size: cover; background-repeat: no-repeat; background-position: center center;
+}
