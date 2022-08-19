@@ -1,7 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 const directionItems = document.querySelectorAll(".direction");
 directionItems.forEach((el) => {
-    console.log(el.getAttribute("direction"));
     if(el.getAttribute("direction") == "left-to-right") {
         gsap.from(el, {
             scrollTrigger: el,

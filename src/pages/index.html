@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -68,6 +69,9 @@
           .banner > .whatsapp {
             @apply w-10 h-10 absolute bottom-[25px] right-[25px] p-2 rounded-full bg-whatsapp grid place-items-center
           }
+          .stats {
+            @apply grid gap-4 grid-cols-1 lg:grid-cols-3 lg:p-10 py-10 px-4
+          }
           .stat {
             @apply flex flex-col items-center justify-center py-20 rounded-2xl
           }
@@ -88,6 +92,21 @@
           }
           .stat:nth-child(even) > h2 {
             @apply text-primary
+          }
+          footer .footer-head {
+            @apply flex items-center justify-center bg-white py-4
+          }
+          footer .footer-content {
+            @apply flex flex-col items-center bg-primary
+          }
+          footer .footer-content a, footer .footer-content p {
+            @apply text-white
+          }
+          footer .social-media {
+            @apply flex items-center justify-between w-full lg:w-auto
+          }
+          footer .other-contact {
+            @apply flex items-center justify-center w-full lg:w-auto
           }
         }
       </style>
@@ -159,8 +178,8 @@
   <div class="content">
     <div class="banner">
       <div class="slogan">
-        <h2 class="lowTracking text-3xl grid place-items-center tracking-[4px]">Meet with the</h2>
-        <h2 class="highTracking text-4xl grid place-items-center tracking-[14px]">Quality</h2>
+        <h2 class="lowTracking text-3xl lg:text-5xl grid place-items-center tracking-[4px]">Meet with the</h2>
+        <h2 class="highTracking text-4xl lg:text-6xl grid place-items-center tracking-[14px]">Quality</h2>
       </div>
       <div class="swipe">
         <p class="text-center">swipe for more</p>
@@ -174,7 +193,7 @@
         </svg>
       </a>
     </div>
-    <div class="waved">
+    <div class="waved overflow-x-hidden">
       <div class="flex items-center justify-between px-4 pt-6">
         <img src="../img/Panel.png" alt="Panel" class="direction md:max-w-[20%] max-w-[40%]" direction="left-to-right">
         <p class="direction w-1/2 text-white text-right md:text-2xl" direction="right-to-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, commodi?</p>
@@ -184,7 +203,7 @@
         <img src="../img/Panel.png" alt="Panel" class="direction md:max-w-[20%] max-w-[40%]" direction="right-to-left">
       </div>
     </div>
-    <div class="grid gap-4 grid-cols-1 lg:grid-cols-3 lg:p-10 py-10 px-4">
+    <div class="stats">
       <div class="stat">
         <h2 count="145" class="count">0</h2>
         <h2 class=" w-max">Happy costumers</h2>
@@ -199,6 +218,48 @@
       </div>
     </div>
   </div>
+  <footer>
+    <div class="footer-head">
+      <img src="../img/Solargy Logo.svg" alt="Solargy">
+    </div>
+    <div class="footer-content">
+      <div class="flex flex-col lg:flex-row w-full lg:w-auto lg:py-10">
+        <div class="social-media">
+          <a href="#" class="trasparent p-4">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="trasparent p-4">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="trasparent p-4">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="#" class="trasparent p-4">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="#" class="trasparent p-4">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+        <div class="other-contact">
+          <a href="#" class="transparent inline-flex">
+            <i class="bi bi-telephone p-4"></i>
+            <p class="grid items-center">+90 000 000 00 00</p>
+          </a>
+        </div>
+        <div class="other-contact">
+          <a href="#" class="transparent inline-flex">
+            <i class="bi bi-envelope p-4"></i>
+            <p class="grid items-center">example@example.com</p>
+          </a>
+        </div>
+      </div>
+      <div class="w-full text-center mb-4">
+        <p>copyright © Solargy</p>
+        <p class="text-xs">all rights reserved</p>
+      </div>
+    </div>
+  </footer>
   <script src="../js/counter.js"></script>
   <script src="../js/directions.js"></script>
 </body>
