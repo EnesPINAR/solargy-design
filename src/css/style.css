@@ -1,3 +1,7 @@
+html {
+    font-family: 'Poppins', sans-serif !important;
+}
+
 .banner {
     background-image: url('../img/Banner.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center center;
 }
@@ -24,4 +28,15 @@
 
 .waved {
     background-image: url("../img/Wave.svg"); background-size: cover; background-repeat: no-repeat; background-position: center center;
+}
+
+.product h2 {
+    -webkit-text-stroke: 1px white;
+}
+
+.product:hover h2 {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px white;
+    letter-spacing: 4px;
+    transition: all 0.4s ease-in;
 }
