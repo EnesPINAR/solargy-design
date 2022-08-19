@@ -99,6 +99,9 @@
           footer .footer-content {
             @apply flex flex-col items-center bg-primary
           }
+          footer .footer-content a {
+            @apply hover:text-secondary
+          }
           footer .footer-content a, footer .footer-content p {
             @apply text-white
           }
@@ -224,7 +227,7 @@
     </div>
     <div class="footer-content">
       <div class="flex flex-col lg:flex-row w-full lg:w-auto lg:py-10">
-        <div class="social-media">
+        <div class="social-media lg:mr-8">
           <a href="#" class="trasparent p-4">
             <i class="bi bi-instagram"></i>
           </a>
@@ -241,16 +244,16 @@
             <i class="bi bi-linkedin"></i>
           </a>
         </div>
-        <div class="other-contact">
-          <a href="#" class="transparent inline-flex">
+        <div class="other-contact lg:mr-8">
+          <a href="#" class="transparent inline-flex items-center">
             <i class="bi bi-telephone p-4"></i>
-            <p class="grid items-center">+90 000 000 00 00</p>
+            +90 000 000 00 00
           </a>
         </div>
         <div class="other-contact">
-          <a href="#" class="transparent inline-flex">
+          <a href="#" class="transparent inline-flex items-center">
             <i class="bi bi-envelope p-4"></i>
-            <p class="grid items-center">example@example.com</p>
+            example@example.com
           </a>
         </div>
       </div>
@@ -262,5 +265,6 @@
   </footer>
   <script src="../js/counter.js"></script>
   <script src="../js/directions.js"></script>
+  <script src="../js/whatsapp-bounce.js"></script>
 </body>
 </html>
