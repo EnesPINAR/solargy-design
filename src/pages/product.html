@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#003379',
+                        'secondary': '#5EBC4C',
+                        'background': '#F8F8F8',
+                        'whatsapp': '#25D366'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+                  a {
+                    @apply text-black hover:text-primary transition
+                  }
+                  body {
+                    @apply bg-background
+                  }
+                  .page-title {
+                    @apply py-2 lg:py-4 text-center text-2xl lg:text-3xl
+                  }
+                }
+          </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <div class="content px-4 lg:px-20 mb-4">
+        <div class="flex flex-col lg:flex-row mt-4 bg-white rounded-lg">
+            <img src="../img/Product.png" alt="Product" class="rounded-t-lg lg:rounded-r-none lg:rounded-bl-lg">
+            <div class="p-4 w-full flex flex-col justify-between">
+                <div class="w-full h-max">
+                    <h2 class="text-black text-2xl lg:text-3xl lg:mb-2">Product Name</h2>
+                    <div class="flex lg:flex-col justify-between">
+                        <p class="lg:mb-2">solar panel</p>
+                        <button class="copyUrl w-max">
+                            <span class="material-symbols-outlined text-base lg:text-xl transition pointer-events-none">
+                                content_copy
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta asperiores tenetur voluptatem aliquam illo consectetur ducimus libero nulla, repudiandae expedita hic debitis perspiciatis? Expedita doloremque quidem repellat. Quos perspiciatis voluptatibus quidem, fugit quod quisquam dignissimos est soluta natus, aliquid eaque.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta asperiores tenetur voluptatem aliquam illo consectetur ducimus libero nulla, repudiandae expedita hic debitis perspiciatis? Expedita doloremque quidem repellat. Quos perspiciatis voluptatibus quidem, fugit quod quisquam dignissimos est soluta natus, aliquid eaque.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta asperiores tenetur voluptatem aliquam illo consectetur ducimus libero nulla, repudiandae expedita hic debitis perspiciatis? Expedita doloremque quidem repellat. Quos perspiciatis voluptatibus quidem, fugit quod quisquam dignissimos est soluta natus, aliquid eaque.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta asperiores tenetur voluptatem aliquam illo consectetur ducimus libero nulla, repudiandae expedita hic debitis perspiciatis? Expedita doloremque quidem repellat. Quos perspiciatis voluptatibus quidem, fugit quod quisquam dignissimos est soluta natus, aliquid eaque.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta asperiores tenetur voluptatem aliquam illo consectetur ducimus libero nulla, repudiandae expedita hic debitis perspiciatis? Expedita doloremque quidem repellat. Quos perspiciatis voluptatibus quidem, fugit quod quisquam dignissimos est soluta natus, aliquid eaque.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/functions/copy-url.js"></script>
+</body>
+
+</html>
