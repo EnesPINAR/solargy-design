@@ -23,7 +23,10 @@
                         'secondary': '#5EBC4C',
                         'background': '#F8F8F8',
                         'whatsapp': '#25D366'
-                    }
+                    },
+                    screens: {
+                        '3xl': '1815px'
+                    },
                 }
             }
         }
@@ -37,7 +40,7 @@
                     @apply bg-background
                   }
                   .page-title {
-                    @apply py-2 lg:py-4 text-center text-2xl lg:text-3xl
+                    @apply py-2 lg:py-4 text-center text-2xl lg:text-3xl font-bold
                   }
                 }
           </style>
@@ -47,12 +50,12 @@
 
 <body>
     <div class="content px-4 lg:px-20 mb-4">
-        <div class="flex flex-col lg:flex-row mt-4 bg-white rounded-lg">
-            <img src="../img/Product.png" alt="Product" class="rounded-t-lg lg:rounded-r-none lg:rounded-bl-lg">
-            <div class="p-4 w-full flex flex-col justify-between">
+        <div class="flex flex-col items-center 3xl:flex-row 3xl:items-start mt-4 bg-white rounded-lg">
+            <img src="../img/Product.png" alt="Product" class="rounded-t-lg 3xl:rounded-r-none 3xl:rounded-bl-lg aspect-[4/3] lg:h-fit xl:max-w-[50%]">
+            <div class="p-4 w-full h-full min-h-full flex flex-col justify-between">
                 <div class="w-full h-max">
-                    <h2 class="text-black text-2xl lg:text-3xl lg:mb-2">Product Name</h2>
-                    <div class="flex lg:flex-col justify-between">
+                    <h2 class="text-black text-2xl font-bold lg:text-3xl lg:mb-2">Product Name</h2>
+                    <div class="flex 3xl:flex-col justify-between">
                         <p class="lg:mb-2">solar panel</p>
                         <button class="copyUrl w-max">
                             <span class="material-symbols-outlined text-base lg:text-xl transition pointer-events-none">
@@ -62,9 +65,6 @@
                     </div>
                 </div>
                 <div class="mt-4">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta asperiores tenetur voluptatem aliquam illo consectetur ducimus libero nulla, repudiandae expedita hic debitis perspiciatis? Expedita doloremque quidem repellat. Quos perspiciatis voluptatibus quidem, fugit quod quisquam dignissimos est soluta natus, aliquid eaque.
-                    </p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta asperiores tenetur voluptatem aliquam illo consectetur ducimus libero nulla, repudiandae expedita hic debitis perspiciatis? Expedita doloremque quidem repellat. Quos perspiciatis voluptatibus quidem, fugit quod quisquam dignissimos est soluta natus, aliquid eaque.
                     </p>

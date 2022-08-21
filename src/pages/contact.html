@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'primary': '#003379',
+                            'secondary': '#5EBC4C',
+                            'background': '#F8F8F8',
+                            'whatsapp': '#25D366'
+                        }
+                    }
+                }
+            }
+        </script>
+        <style type="text/tailwindcss">
+            @layer utilities {
+                      a {
+                        @apply text-black hover:text-primary transition
+                      }
+                      body {
+                        @apply bg-background
+                      }
+                      .page-title {
+                        @apply py-2 lg:py-4 text-center text-2xl lg:text-3xl font-bold
+                      }
+                      
+                      .contact {
+                        @apply p-4 bg-white rounded-xl flex flex-col-reverse lg:flex-row lg:justify-between
+                      }
+                      .contact iframe {
+                        @apply max-w-full lg:min-h-full rounded-xl w-full aspect-[1/1] sm:aspect-[4/3]
+                      }
+                      .contact i {
+                        @apply text-xl
+                      }
+                    }
+              </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    </head>
+<body>
+    <div class="content px-4 lg:px-20 mb-4">
+        <div class="page-title">    
+            <h2>Contact</h2>
+        </div>
+        <div class="contact">
+            <div class="lg:w-[50%] rounded-xl lg:min-h-full">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.2298961258093!2d28.998221528733005!3d41.04784209913826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab70a72ef0037%3A0x1527f3003b54ce50!2zTXVyYWRpeWUsIDM0MzU3IEJlxZ9pa3RhxZ8vxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1661103807871!5m2!1str!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="flex flex-col justify-between lg:w-[50%] lg:pl-4">
+                <h2 class="font-bold text-2xl px-4 mb-4">Feel free to contact with us</h2>
+                <a href="#" class="transparent inline-flex items-center">
+                    <i class="bi bi-telephone p-4"></i>
+                    +90 000 000 00 00
+                </a>
+                <a href="#" class="transparent inline-flex items-center">
+                    <i class="bi bi-envelope p-4"></i>
+                    example@example.com
+                </a>
+                <a href="#" class="transparent inline-flex items-center">
+                    <i class="bi bi-building p-4"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, perferendis?
+                </a>
+                <div class="flex justify-between">
+                    <a href="#" class="trasparent p-4">
+                      <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" class="trasparent p-4">
+                      <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="trasparent p-4">
+                      <i class="bi bi-youtube"></i>
+                    </a>
+                    <a href="#" class="trasparent p-4">
+                      <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="#" class="trasparent p-4">
+                      <i class="bi bi-linkedin"></i>
+                    </a>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
