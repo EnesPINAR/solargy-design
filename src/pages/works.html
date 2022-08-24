@@ -61,6 +61,56 @@
                       .work iframe {
                         @apply float-right lg:h-[300px] lg:w-[300px] rounded-lg mt-4 lg:mt-0
                       }
+
+                      header {
+                @apply fixed inset-0 flex items-center justify-between py-5 px-5 lg:px-20 bg-white h-20 w-full z-10
+            }
+            header > nav {
+                @apply hidden lg:flex list-none  
+            }
+            header > nav > ol {
+                @apply list-none mr-12
+            }
+            header > nav > ul {
+                @apply list-none flex
+            }
+            header > nav > ul > li:not(:last-of-type) {
+                @apply mr-12
+            }
+            header > nav a {
+                @apply text-2xl
+            }
+            header > nav a:hover {
+                @apply underline transition duration-300
+            }
+            menu {
+                @apply flex flex-col items-center bg-white w-full h-[100vh] opacity-0 pointer-events-none transition-opacity duration-1000
+                fixed inset-0 lg:hidden
+            }
+            menu > li {
+                @apply flex items-center justify-center p-5 h-20 w-full
+            }
+            menu > li > a {
+                @apply text-2xl
+            }
+            footer .footer-head {
+                @apply flex items-center justify-center bg-white py-4
+            }
+            footer .footer-content {
+                @apply flex flex-col items-center bg-primary
+            }
+            footer .footer-content a {
+                @apply hover:text-secondary
+            }
+            footer .footer-content a, footer .footer-content p {
+                @apply text-white
+            }
+            footer .social-media {
+                @apply flex items-center justify-between w-full lg:w-auto
+            }
+            footer .other-contact {
+                @apply flex items-center justify-center w-full lg:w-auto
+            }
                     }
               </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
@@ -68,6 +118,66 @@
 </head>
 
 <body>
+    <header>
+        <img src="../img/Solargy Logo.svg" alt="Solargy">
+        <nav>
+          <ol>
+            <li>
+              <a href="#">Homepage</a>
+            </li>
+          </ol>
+          <ul>
+            <li>
+              <a href="#">Products</a>
+            </li>
+            <li>
+              <a href="#">Works</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="openMenu grid place-items-center lg:hidden">
+          <span class="material-symbols-outlined">
+            menu
+          </span>
+        </button>
+      </header>
+      <menu>
+        <li class="justify-between">
+          <img src="../img/Solargy Logo.svg" alt="Solargy">
+          <button class="closeMenu grid place-items-center sm:py-2 sm:pl-2">
+            <span class="material-symbols-outlined">
+              close
+            </span>
+          </button>
+        </li>
+        <li>
+          <a href="#">Homepage</a>
+        </li>
+        <li>
+          <a href="#">Products</a>
+        </li>
+        <li>
+          <a href="#">Works</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </menu>
     <div class="content px-4 xl:px-20 mb-4">
         <div class="page-title">
             <h2>Works</h2>
@@ -137,6 +247,49 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="footer-head">
+          <img src="../img/Solargy Logo.svg" alt="Solargy">
+        </div>
+        <div class="footer-content">
+          <div class="flex flex-col lg:flex-row w-full lg:w-auto lg:py-10">
+            <div class="social-media lg:mr-8">
+              <a href="#" class="trasparent p-4">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" class="trasparent p-4">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="trasparent p-4">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a href="#" class="trasparent p-4">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="#" class="trasparent p-4">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+            <div class="other-contact lg:mr-8">
+              <a href="#" class="transparent inline-flex items-center">
+                <i class="bi bi-telephone p-4"></i>
+                +90 000 000 00 00
+              </a>
+            </div>
+            <div class="other-contact">
+              <a href="#" class="transparent inline-flex items-center">
+                <i class="bi bi-envelope p-4"></i>
+                example@example.com
+              </a>
+            </div>
+          </div>
+          <div class="w-full text-center mb-4">
+            <p>copyright © Solargy</p>
+            <p class="text-xs">all rights reserved</p>
+          </div>
+        </div>
+      </footer>
+      <script src="../js/functions/menu.js"></script>
     <script src="../js/functions/copy-url.js"></script>
 </body>
 

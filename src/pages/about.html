@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>About</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider-extensions.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,31 +26,27 @@
                         'secondary': '#5EBC4C',
                         'background': '#F8F8F8',
                         'whatsapp': '#25D366'
-                    }
+                    },
+                    screens: {
+                        '3xl': '1815px'
+                    },
                 }
             }
         }
     </script>
     <style type="text/tailwindcss">
         @layer utilities {
-                  a {
-                    @apply text-black hover:text-primary transition
-                  }
-                  body {
-                    @apply bg-background
-                  }
+            a {
+                @apply text-black hover:text-primary transition
+            }
+            body {
+                @apply bg-background
+            }
+            .page-title {
+                @apply py-2 lg:py-4 text-center text-2xl lg:text-3xl
+            }
 
-                  .single-blog {
-                    @apply bg-white rounded-lg mt-4 max-w-[800px]
-                  }
-                  .single-blog img {
-                    @apply aspect-[4/3]
-                  }
-                  .brace {
-                    @apply bg-primary text-white py-2 px-4 w-[calc(100%-1rem)]
-                  }
-
-                  header {
+            header {
                 @apply fixed inset-0 flex items-center justify-between py-5 px-5 lg:px-20 bg-white h-20 w-full z-10
             }
             header > nav {
@@ -96,12 +95,11 @@
             footer .other-contact {
                 @apply flex items-center justify-center w-full lg:w-auto
             }
-                }
-          </style>
+        }
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 </head>
-
 <body>
     <header>
         <img src="../img/Solargy Logo.svg" alt="Solargy">
@@ -163,26 +161,8 @@
           <a href="#">Contact</a>
         </li>
       </menu>
-    <div class="content px-4 lg:px-20 mb-4 flex flex-col items-center">
-        <div class="single-blog">
-            <div class="p-4">
-                <img src="../img/Blog.png" alt="Blog">
-            </div>
-            <div class="brace">
-                <h2 class="line-limit-2 max-w-[85%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, odit suscipit? Ut pariatur ad nobis facilis sunt culpa aperiam sit?</h2>
-            </div>
-            <div class="flex justify-between lg:justify-start py-2 px-4">
-                <p class="text-stone-500 mr-4 grid place-items-center">12.08.2022</p>
-                <button class="copyUrl w-max text-stone-500">
-                    <span class="material-symbols-outlined text-base lg:text-xl transition pointer-events-none">
-                        content_copy
-                    </span>
-                </button>
-            </div>
-            <div class="py-2 px-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit error maiores eaque, quos expedita quis quaerat! Eligendi excepturi autem suscipit, ipsum, odio possimus ullam similique impedit at commodi amet quidem quod molestiae numquam vero est provident repudiandae aliquid! A, blanditiis!</p>
-            </div>
-        </div>
+    <div class="about">
+        
     </div>
     <footer>
         <div class="footer-head">
@@ -227,7 +207,6 @@
         </div>
       </footer>
       <script src="../js/functions/menu.js"></script>
-    <script src="../js/functions/copy-url.js"></script>
+    <script src="../js/animations/about.js"></script>
 </body>
-
 </html>

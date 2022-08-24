@@ -33,6 +33,7 @@
           body {
             @apply bg-background
           }
+
           header {
             @apply fixed inset-0 flex items-center justify-between py-5 px-5 lg:px-20 bg-white h-20 w-full z-10
           }
@@ -48,6 +49,12 @@
           header > nav > ul > li:not(:last-of-type) {
             @apply mr-12
           }
+          header > nav a {
+            @apply text-2xl
+          }
+          header > nav a:hover {
+            @apply underline transition duration-300
+          }
           menu {
             @apply flex flex-col items-center bg-white w-full h-[100vh] opacity-0 pointer-events-none transition-opacity duration-1000
             fixed inset-0 lg:hidden
@@ -58,7 +65,24 @@
           menu > li > a {
             @apply text-2xl
           }
-
+          footer .footer-head {
+            @apply flex items-center justify-center bg-white py-4
+          }
+          footer .footer-content {
+            @apply flex flex-col items-center bg-primary
+          }
+          footer .footer-content a {
+            @apply hover:text-secondary
+          }
+          footer .footer-content a, footer .footer-content p {
+            @apply text-white
+          }
+          footer .social-media {
+            @apply flex items-center justify-between w-full lg:w-auto
+          }
+          footer .other-contact {
+            @apply flex items-center justify-center w-full lg:w-auto
+          }
           
           .banner {
             @apply relative w-full h-[calc(100vh-80px)] mt-[80px]
@@ -83,7 +107,7 @@
             @apply w-max text-3xl
           }
           .stat > h2:first-of-type {
-            @apply mb-4
+            @apply mb-4 text-5xl
           }
           .stat:nth-child(odd) {
             @apply bg-primary
@@ -96,24 +120,6 @@
           }
           .stat:nth-child(even) > h2 {
             @apply text-primary
-          }
-          footer .footer-head {
-            @apply flex items-center justify-center bg-white py-4
-          }
-          footer .footer-content {
-            @apply flex flex-col items-center bg-primary
-          }
-          footer .footer-content a {
-            @apply hover:text-secondary
-          }
-          footer .footer-content a, footer .footer-content p {
-            @apply text-white
-          }
-          footer .social-media {
-            @apply flex items-center justify-between w-full lg:w-auto
-          }
-          footer .other-contact {
-            @apply flex items-center justify-center w-full lg:w-auto
           }
         }
   </style>
@@ -183,7 +189,7 @@
       <a href="#">Contact</a>
     </li>
   </menu>
-  <div class="content">
+  <div class="content !mt-0">
     <a href="#" class="whatsapp">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-whatsapp"
         viewBox="0 0 16 16">
@@ -272,7 +278,6 @@
       </div>
     </div>
   </footer>
-  <script src="../js/animations/menu.js"></script>
   <script src="../js/animations/counter.js"></script>
   <script src="../js/animations/directions.js"></script>
   <script src="../js/animations/whatsapp-bounce.js"></script>
