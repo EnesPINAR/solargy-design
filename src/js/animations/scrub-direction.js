@@ -27,7 +27,7 @@ for(var i = 0; i < elements.length; i++) {
         gsap.from(element, {
             scrollTrigger: {
                 trigger: element,
-                scrub: true,
+                scrub: 1,
                 start: "top 40%",
                 end: "+=600",
             },
@@ -37,7 +37,7 @@ for(var i = 0; i < elements.length; i++) {
         gsap.from(element, {
             scrollTrigger: {
                 trigger: element,
-                scrub: true,
+                scrub: 1,
                 start: "top 40%",
                 end: "+=600",
             },
