@@ -67,3 +67,7 @@ html {
         clip-path: polygon(0 0, 0 100%, 100% 100%, 95% 50%, 100% 0);
     }
 }
+
+.brand-text {
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}

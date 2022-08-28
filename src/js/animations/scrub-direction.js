@@ -27,7 +27,16 @@ for(var i = 0; i < elements.length; i++) {
     gsap.from(element, {
         scrollTrigger: element,
         opacity: 0,
-        duration: 5
+        duration: 3
+    })
+
+    gsap.to(element, {
+        scrollTrigger: {
+            scrub: true,
+            start: "center center",
+            end: "bottom -50%",
+        },
+        marginBottom: 0
     })
 
     // let d = element.getAttribute("direction");
